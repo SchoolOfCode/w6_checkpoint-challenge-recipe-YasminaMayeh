@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* ul {
+    background-color: aquamarine;
+} */
+
+li:nth-child(6) {
+background-color: hotpink;
+
+}

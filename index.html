@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fetch</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <section id="recipe-section">
       <h2 class="section-heading">Welcome to the Recipe Finder!</h2>
       <input
         aria-label="food-input"
@@ -16,7 +16,10 @@
       <button id="recipe-button" onclick="handleRecipeClick()">
         Give me a recipe!
       </button>
-      <a id="recipe-label"></a>
+      <section id="recipe-section">
+      <a target="_blank" id="recipe-label"></a>
+      <ul class = "ingredients-list">
+      </ul>
     </section>
     <script src="./main.js"></script>
   </body>
