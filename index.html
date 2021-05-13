@@ -4,23 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fetch</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <main>
       <h2 class="section-heading">Welcome to the Recipe Finder!</h2>
-      <input
-        aria-label="food-input"
-        id="food-input"
-        onchange="handleFoodChange()"
-      />
-      <button id="recipe-button" onclick="handleRecipeClick()">
-        Give me a recipe!
-      </button>
+
+      <section id="search-section">
+        <input
+          aria-label="food-input"
+          id="food-input"
+          onchange="handleFoodChange()"
+        />
+        <button id="recipe-button" onclick="handleRecipeClick()">
+          Give me a recipe!
+        </button>
+      </section>
+
       <section id="recipe-section">
-      <a target="_blank" id="recipe-label"></a>
-      <ul class = "ingredients-list">
-      </ul>
-    </section>
-    <script src="./main.js"></script>
+        <!-- 3 recipes in here -->
+        <div class="first-recipe">
+          <a target="_blank" id="recipe-label"></a>
+          <br />
+          <img />
+          <ul id="ingredients-list"></ul>
+        </div>
+
+        <div class="second-recipe">
+          <a target="_blank" id="recipe-label"></a>
+          <br />
+          <img />
+          <ul id="ingredients-list"></ul>
+        </div>
+
+        <div class="third-recipe">
+          <a target="_blank" id="recipe-label"></a>
+          <br />
+          <img />
+          <ul id="ingredients-list"></ul>
+        </div>
+      </section>
+
+      <script src="./main.js"></script>
+    </main>
   </body>
 </html>
