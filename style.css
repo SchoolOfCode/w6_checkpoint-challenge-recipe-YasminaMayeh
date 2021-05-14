@@ -5,13 +5,12 @@
   padding: 0;
   text-decoration: none;
   font-family: "Texturina", serif;
+  color: ;
 }
 body {
   height: 100vh;
 }
-#recipe-label {
-  display: none;
-}
+
 main {
   justify-content: center;
   text-align: center;
