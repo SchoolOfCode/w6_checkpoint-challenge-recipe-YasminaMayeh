@@ -4,20 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fetch</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <section id="recipe-section">
+    <main>
       <h2 class="section-heading">Welcome to the Recipe Finder!</h2>
-      <input
-        aria-label="food-input"
-        id="food-input"
-        onchange="handleFoodChange()"
-      />
-      <button id="recipe-button" onclick="handleRecipeClick()">
-        Give me a recipe!
-      </button>
-      <a id="recipe-label"></a>
-    </section>
-    <script src="./main.js"></script>
+
+      <section id="search-section">
+        <input
+          aria-label="food-input"
+          id="food-input"
+          onchange="handleFoodChange()"/>
+    
+        <button id="recipe-button" onclick="handleRecipeClick()">
+          Give me a recipe!
+        </button>
+      </section>
+      <section id="recipe-section">
+        <!-- 3 recipes in here -->
+        <div class="first-recipe">
+          <a target="_blank" id="recipe-label"></a>
+          <br />
+          <img src="images/undraw_cooking_lyxy.png">
+          <ul id="ingredients-list"></ul>
+        </div>
+
+        <div class="second-recipe">
+          <a target="_blank" id="recipe-label"></a>
+          <br />
+          <img src="images/undraw_gone_shopping_vwmc.png"/>
+          <ul id="ingredients-list"></ul>
+        </div>
+
+        <div class="third-recipe">
+          <a target="_blank" id="recipe-label"></a>
+          <br />
+          <img src="images/undraw_healthy_options_sdo3.png"/>
+          <ul id="ingredients-list"></ul>
+        </div>
+      </section>
+
+      <script src="./main.js"></script>
+    </main>
   </body>
 </html>
