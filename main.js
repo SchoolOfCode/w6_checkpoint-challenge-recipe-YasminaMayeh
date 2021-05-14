@@ -23,9 +23,7 @@ async function fetchRecipe(food) {
 
   //iterate(forloop) through all of the recipes 
   let allRecipes = data.hits 
-  for (i=0; i<
-    
-    3; i++){
+  for (i=0; i<3; i++){
     addRecipeToWebpage(data.hits[i], i) // i = 0, 1, 2
   }
 }
@@ -55,8 +53,9 @@ function addRecipeToWebpage(recipe, index){
 
   // get the <ul> tag
   const ulTag = recipeDiv.getElementsByTagName("ul")[0]
-  // add ingrediats as li's 
+  // add ingredients as li's 
   // clear the results after 
+  ulTag.style.backgroundColor= "rgb(214, 210, 210)"
   ulTag.innerHTML = ""
   let ingredients = recipe.recipe.ingredients
   ingredients.forEach((ingredient)=>
